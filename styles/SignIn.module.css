@@ -1,0 +1,95 @@
+.nav {
+  background: #242635;
+  color: aliceblue;
+  display: flex;
+  padding: 0.4vh 7vw;
+  justify-content: space-between;
+}
+
+.logoCont {
+  width: 500px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 0.5vw;
+  margin-right: 20px;
+}
+
+.nav_btn {
+  background: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  width: 141px;
+  height: 45px;
+}
+
+.mainBg {
+  background: linear-gradient(
+    208.75deg,
+    #9f48d3 -0.84%,
+    rgba(41, 35, 35, 0) 82.29%
+  );
+  margin: 5vh 8vw;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+
+.pic {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.formCont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  row-gap: 1vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+.input {
+  background: #292836;
+  border-radius: 12px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.signBtn {
+  color: white;
+  background: #17192b;
+  border: none;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.250929);
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 141px;
+  height: 45px;
+}
+
+@media (max-width: 1000px) {
+  .mainBg {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 15px;
+    row-gap: 50px;
+  }
+  .form {
+    width: 70vw;
+  }
+}
