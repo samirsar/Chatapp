@@ -5,6 +5,7 @@ import styles from "../styles/SignUp.module.css";
 function SignUp() {
   return (
     <>
+      {/* navbar */}
       <nav className={styles.nav}>
         <div className={styles.logoCont}>
           <Image
@@ -16,6 +17,7 @@ function SignUp() {
             height="100"
           />
         </div>
+        {/* navbar right side */}
         <div className={styles.options}>
           <p>Already have an account?</p>
           <button className={styles.nav_btn}>SignIn</button>
@@ -27,8 +29,9 @@ function SignUp() {
             <Image src="/Login-picture1.svg" alt="" width="770" height="600" />
           </div>
         </div>
-
+        {/* Form Container */}
         <div className={styles.formCont}>
+          {/* Form Header */}
           <h1
             style={{
               background:
