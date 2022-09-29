@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "../styles/SignIn.module.css";
+import Link from "next/link";
 
 function SignIn() {
   return (
@@ -21,7 +22,11 @@ function SignIn() {
         {/* right side of navbar */}
         <div className={styles.options}>
           <p>Dont have an account?</p>
-          <button className={styles.nav_btn}>SignUp</button>
+          <Link href="/signup">
+            <button style={{ cursor: "pointer" }} className={styles.nav_btn}>
+              SignUp
+            </button>
+          </Link>
         </div>
       </nav>
       {/* Body */}
@@ -68,7 +73,11 @@ function SignIn() {
               required
             />
             <br />
-            <button className={styles.signBtn} type="submit">
+            <button
+              style={{ cursor: "pointer" }}
+              className={styles.signBtn}
+              type="submit"
+            >
               Sign in
             </button>
           </form>

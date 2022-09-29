@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styles from "../styles/SignUp.module.css";
 
@@ -20,7 +21,11 @@ function SignUp() {
         {/* navbar right side */}
         <div className={styles.options}>
           <p>Already have an account?</p>
-          <button className={styles.nav_btn}>SignIn</button>
+          <Link href="/">
+            <button style={{ cursor: "pointer" }} className={styles.nav_btn}>
+              SignIn
+            </button>
+          </Link>
         </div>
       </nav>
       <div className={styles.mainBg}>
@@ -125,10 +130,17 @@ function SignUp() {
             <br />
             <p style={{ margin: "0 auto" }}>
               I accept the
-              <span style={{ color: "red" }}> Terms & Conditions</span>
+              <span style={{ cursor: "pointer", color: "red" }}>
+                {" "}
+                Terms & Conditions
+              </span>
             </p>
             <br />
-            <button className={styles.signBtn} type="submit">
+            <button
+              style={{ cursor: "pointer" }}
+              className={styles.signBtn}
+              type="submit"
+            >
               Sign in
             </button>
           </form>
