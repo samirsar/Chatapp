@@ -73,13 +73,15 @@ function SignIn() {
               required
             />
             <br />
-            <button
-              style={{ cursor: "pointer" }}
-              className={styles.signBtn}
-              type="submit"
-            >
-              Sign in
-            </button>
+            <Link href='/dashboard'>
+              <button
+                style={{ cursor: "pointer" }}
+                className={styles.signBtn}
+                type="submit"
+              >
+                Sign in
+              </button>
+            </Link>
           </form>
         </div>
       </div>
