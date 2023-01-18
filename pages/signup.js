@@ -141,7 +141,7 @@ function SignUp() {
               className={styles.signBtn}
               type="submit"
             >
-              Sign in
+              Sign Up
             </button>
           </form>
         </div>
