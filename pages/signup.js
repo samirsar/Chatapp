@@ -48,7 +48,7 @@ function SignUp() {
           </h1>
           <form className={styles.form} action="/api/form" method="post">
             <label
-              style={{ fontSize: "20px", fontWeight: "800" }}
+              style={{ fontSize:"15px", fontWeight: "800" }}
               htmlFor="first"
             >
               First Name
@@ -64,7 +64,7 @@ function SignUp() {
             />
             <br />
             <label
-              style={{ fontSize: "20px", fontWeight: "800" }}
+              style={{ fontSize:"15px", fontWeight: "800" }}
               htmlFor="last"
             >
               Last Name
@@ -80,7 +80,7 @@ function SignUp() {
             />
             <br />
             <label
-              style={{ fontSize: "20px", fontWeight: "800" }}
+              style={{ fontSize:"15px", fontWeight: "800" }}
               htmlFor="email"
             >
               Email
@@ -97,7 +97,7 @@ function SignUp() {
             <br />
 
             <label
-              style={{ fontSize: "20px", fontWeight: "800" }}
+              style={{ fontSize:"15px", fontWeight: "800" }}
               htmlFor="pwd"
             >
               Password
@@ -113,7 +113,7 @@ function SignUp() {
             />
             <br />
             <label
-              style={{ fontSize: "20px", fontWeight: "800" }}
+              style={{ fontSize:"15px", fontWeight: "800" }}
               htmlFor="cpwd"
             >
               Confirm Password
