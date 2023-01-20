@@ -442,6 +442,130 @@ function Dashboard() {
           </div>
         </>
       ) : // Profile
+      clickedItem==4?(
+        <>
+        <div className={rstyles.cont}>
+            {/* header */}
+            <div className={rstyles.header}>
+              <div className={rstyles.name}>
+                <h1>Chat</h1>
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  right: "0",
+                  marginRight: "6.5vw",
+                }}
+                className={rstyles.right}
+              >
+                <FormControl
+                  sx={{
+                    m: 1,
+                    width: "17vw",
+                    height: "30px",
+                    backgroundColor: "#242731",
+                    borderRadius: "50px",
+                    color: "white",
+                  }}
+                  variant="filled"
+                >
+                  <InputLabel
+                    sx={{ color: "white" }}
+                    shrink={true}
+                    htmlFor="outlined-adornment-search"
+                  >
+                    Search
+                  </InputLabel>
+                  <OutlinedInput
+                    sx={{ height: "30px", borderRadius: "50px" }}
+                    id="outlined-adornment-search"
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <IconButton edge="end">
+                          <SearchIcon style={{ color: "white" }} />
+                        </IconButton>
+                      </InputAdornment>
+                    }
+                    label="Search"
+                  />
+                </FormControl>
+                <div style={{ marginTop: "18px", marginLeft: "5vw" }}>
+                  <Image
+                    src="/notification.svg"
+                    alt=""
+                    height="70"
+                    width="70"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Body */}
+            </div>
+        </>
+
+      ):
+      clickedItem==5?(
+        <>
+        <div className={rstyles.cont}>
+            {/* header */}
+            <div className={rstyles.header}>
+              <div className={rstyles.name}>
+                <h1>Settings</h1>
+              </div>
+              <div
+                style={{
+                  position: "absolute",
+                  right: "0",
+                  marginRight: "6.5vw",
+                }}
+                className={rstyles.right}
+              >
+                <FormControl
+                  sx={{
+                    m: 1,
+                    width: "17vw",
+                    height: "30px",
+                    backgroundColor: "#242731",
+                    borderRadius: "50px",
+                    color: "white",
+                  }}
+                  variant="filled"
+                >
+                  <InputLabel
+                    sx={{ color: "white" }}
+                    shrink={true}
+                    htmlFor="outlined-adornment-search"
+                  >
+                    Search
+                  </InputLabel>
+                  <OutlinedInput
+                    sx={{ height: "30px", borderRadius: "50px" }}
+                    id="outlined-adornment-search"
+                    endAdornment={
+                      <InputAdornment position="end">
+                        <IconButton edge="end">
+                          <SearchIcon style={{ color: "white" }} />
+                        </IconButton>
+                      </InputAdornment>
+                    }
+                    label="Search"
+                  />
+                </FormControl>
+                <div style={{ marginTop: "18px", marginLeft: "5vw" }}>
+                  <Image
+                    src="/notification.svg"
+                    alt=""
+                    height="70"
+                    width="70"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Body */}
+            </div>
+        </>
+
+      ):
       clickedItem === 6 ? (
         <div className={rstyles.cont}>
           {/* header */}
