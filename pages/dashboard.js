@@ -9,6 +9,7 @@ import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import SearchIcon from "@mui/icons-material/Search";
 import FormControl from "@mui/material/FormControl";
+import Link from "next/link";
 
 // Dashboard
 function Dashboard() {
@@ -132,12 +133,16 @@ function Dashboard() {
             </div>
           </div>
           {/* Logout */}
-          <div className={lstyles.logout}>
+          <Link href="/" >
+            
+          <div className={lstyles.logout} style={{ cursor: "pointer" }}>
             <div className={lstyles.icon}>
               <Image src="/Logout.png" alt="" width="28" height="28" />
             </div>
             <div className={lstyles.logoutText}>Logout</div>
+            
           </div>
+          </Link>
         </div>
       </div>
       {/* Right Pane */}
